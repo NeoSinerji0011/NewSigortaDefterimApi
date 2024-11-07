@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("API", "C:\\Users\\user\\Desktop\\bitbucket\\Yeni klasör\\github\\NewSigortaDefterimApi\\API", "API.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Projects\\Regortech\\NeoRpaApi\\API", "API.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("API.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4ef03a1d08f31ac956d364b5094a5dabd2502c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("API.IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API.IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

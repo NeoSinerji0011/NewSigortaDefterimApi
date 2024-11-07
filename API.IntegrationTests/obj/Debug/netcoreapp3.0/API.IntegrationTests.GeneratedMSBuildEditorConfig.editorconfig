@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = API.IntegrationTests
-build_property.ProjectDir = C:\Users\user\Desktop\bitbucket\Yeni klasör\github\NewSigortaDefterimApi\API.IntegrationTests\
+build_property.ProjectDir = D:\Projects\Regortech\NeoRpaApi\API.IntegrationTests\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
