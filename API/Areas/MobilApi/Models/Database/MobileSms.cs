@@ -16,9 +16,6 @@ namespace API.Areas.MobilApi.Models.Database
         public string Body { get; set; }
         public DateTime SmsTarihi { get; set; }
 
-        /// <summary>Sunucu/UTC kayıt zamanı; 1 dk sonra silme bu alana göre yapılır.</summary>
-        public DateTime KayitZamani { get; set; }
-
         public string SirketAdi { get; set; }
 
         [Column(TypeName = "decimal(18,6)")]

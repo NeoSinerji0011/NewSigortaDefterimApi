@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using API.Areas.MobilApi.Helper;
 using API.Areas.MobilApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +10,7 @@ using Microsoft.Extensions.Hosting;
 namespace SigortaDefterimV2API.Hosted
 {
     /// <summary>
-    /// MobileSms kayıtlarını KayitZamani (UTC) üzerinden yaklaşık 1 dakika sonra siler.
+    /// MobileSms kayıtlarını SmsTarihi (TR saati) üzerinden yaklaşık 1 dakika sonra siler.
     /// </summary>
     public class MobileSmsCleanupHostedService : BackgroundService
     {
@@ -31,9 +32,9 @@ namespace SigortaDefterimV2API.Hosted
                     using (var scope = _scopeFactory.CreateScope())
                     {
                         var db = scope.ServiceProvider.GetRequiredService<DataContext>();
-                        var threshold = DateTime.UtcNow.Subtract(Retention);
+                        var threshold = Utils.getTRDateTime().Subtract(Retention);
                         await db.Database.ExecuteSqlRawAsync(
-                            "DELETE FROM MobileSms WHERE KayitZamani < {0}",
+                            "DELETE FROM MobileSms WHERE SmsTarihi < {0}",
                             threshold);
                     }
                 }
