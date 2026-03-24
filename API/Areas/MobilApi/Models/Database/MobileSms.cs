@@ -19,7 +19,7 @@ namespace API.Areas.MobilApi.Models.Database
 
         [Column(TypeName = "decimal(18,6)")]
         public decimal CurrentTimeData { get; set; }
-
+        //adsad
         [Column(TypeName = "decimal(18,6)")]
         public decimal CurrentOldTimeData { get; set; }
     }
