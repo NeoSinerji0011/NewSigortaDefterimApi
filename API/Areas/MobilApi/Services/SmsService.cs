@@ -66,6 +66,7 @@ namespace API.Areas.MobilApi.Services
                 ToPhone = smsItem.toPhone ?? "",
                 Body = smsItem.body ?? "",
                 SmsTarihi = smsItem.date != default ? smsItem.date : Utils.getTRDateTime(),
+                KayitZamani = DateTime.UtcNow,
                 SirketAdi = smsItem.SirketAdi,
                 CurrentTimeData = smsItem.currentTimeData,
                 CurrentOldTimeData = smsItem.currentOldTimeData

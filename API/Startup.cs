@@ -20,6 +20,7 @@ using System.IO;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.Extensions.FileProviders;
 using Newtonsoft.Json.Serialization;
+using SigortaDefterimV2API.Hosted;
 
 namespace SigortaDefterimV2API
 {
@@ -87,6 +88,7 @@ namespace SigortaDefterimV2API
             services.AddScoped<PolicyService>();
             services.AddScoped<CarService>();
             services.AddScoped<API.Areas.MobilApi.Services.SmsService>();
+            services.AddHostedService<MobileSmsCleanupHostedService>();
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
