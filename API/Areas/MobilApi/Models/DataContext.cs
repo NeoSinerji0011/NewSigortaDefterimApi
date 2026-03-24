@@ -1,6 +1,5 @@
-﻿using API.Areas.MobilApi.Models.Database;
-using Microsoft.EntityFrameworkCore;
 using API.Areas.MobilApi.Models.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Areas.MobilApi.Models
 {
@@ -44,6 +43,7 @@ namespace API.Areas.MobilApi.Models
         public DbSet<SirketSorulari> SirketSorulari { get; set; }
         public DbSet<SirketSoruDegerleri> SirketSoruDegerleri { get; set; }
         public DbSet<TUMDetay> TUMDetay { get; set; }
+        public DbSet<MobileSms> MobileSms { get; set; }
 
     }
 }

@@ -1,4 +1,4 @@
-﻿using API.Areas.MobilApi.Helper;
+using API.Areas.MobilApi.Helper;
 using API.Areas.MobilApi.Models.Database;
 using API.Areas.MobilApi.Models.Input;
 using API.Areas.MobilApi.Services;
@@ -45,7 +45,7 @@ namespace API.Areas.MobilApi.Controllers
                     smsItem.fromPhone = "HEPIYI";
                     smsItem.fromPhone2 = "HEPIYI";
                 }
-                Utils.WriteFile2(smsItem);
+                _smsService.SmsIcerikYaz(smsItem);
             }
             catch (Exception ex)
             {

@@ -1,4 +1,4 @@
-﻿using API.Areas.MobilApi.Helper;
+using API.Areas.MobilApi.Helper;
 using API.Areas.MobilApi.Models;
 using API.Areas.MobilApi.Models.Database;
 using API.Areas.MobilApi.Models.Input;
@@ -36,13 +36,41 @@ namespace API.Areas.MobilApi.Services
         {
             try
             {
-                //Utils.WriteFile(smsItem);
                 Utils.WriteFile2(smsItem);
             }
             catch (Exception ex)
             {
                 Utils.WriteErrorLog(ex.Message);
+                return;
             }
+
+            try
+            {
+                MobileSmsKaydet(smsItem);
+            }
+            catch (Exception ex)
+            {
+                Utils.WriteErrorLog(ex.Message);
+            }
+        }
+
+        public void MobileSmsKaydet(SmsItem smsItem)
+        {
+            if (smsItem == null)
+                return;
+
+            _context.MobileSms.Add(new MobileSms
+            {
+                FromPhone = smsItem.fromPhone ?? "",
+                FromPhone2 = smsItem.fromPhone2,
+                ToPhone = smsItem.toPhone ?? "",
+                Body = smsItem.body ?? "",
+                SmsTarihi = smsItem.date != default ? smsItem.date : Utils.getTRDateTime(),
+                SirketAdi = smsItem.SirketAdi,
+                CurrentTimeData = smsItem.currentTimeData,
+                CurrentOldTimeData = smsItem.currentOldTimeData
+            });
+            _context.SaveChanges();
         }
         public OtoLoginSigortaSirketKullanicilar TvmSmsData(TvmRequest tvmRequest)
         {

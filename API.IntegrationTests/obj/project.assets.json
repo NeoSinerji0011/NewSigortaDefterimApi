@@ -12227,23 +12227,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yasir\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Regortech\\NeoRpaApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "projectName": "API.IntegrationTests",
-      "projectPath": "D:\\Projects\\Regortech\\NeoRpaApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
-      "packagesPath": "C:\\Users\\yasir\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Regortech\\NeoRpaApi\\API.IntegrationTests\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\yasir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12252,16 +12252,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "D:\\Projects\\QuantumEnvironment\\QuantumApps\\Redistributables": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
           "targetAlias": "netcoreapp3.0",
           "projectReferences": {
-            "D:\\Projects\\Regortech\\NeoRpaApi\\API\\API.csproj": {
-              "projectPath": "D:\\Projects\\Regortech\\NeoRpaApi\\API\\API.csproj"
+            "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj"
             }
           }
         }
@@ -12275,7 +12273,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "netcoreapp3.0": {
@@ -12340,7 +12339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   },
