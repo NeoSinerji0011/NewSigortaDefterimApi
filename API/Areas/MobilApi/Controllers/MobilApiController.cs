@@ -40,6 +40,12 @@ namespace API.Areas.MobilApi.Controllers
         {
             try
             {
+                if (smsItem == null)
+                {
+                    Utils.WriteErrorLog("SmsReceiver: smsItem null (JSON gövde boş veya hatalı)." + DateTime.Now + Environment.NewLine);
+                    return Json(new { Status = 400, Result = false, Message = "Body gerekli" });
+                }
+
                 if (smsItem.fromPhone == "Hepiyi")
                 {
                     smsItem.fromPhone = "HEPIYI";
