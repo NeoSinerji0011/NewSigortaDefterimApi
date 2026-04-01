@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 
 namespace API.Areas.MobilApi.Controllers
 {
+    [Area("MobilApi")]
     public class MobilApiController : Controller
     {
         private SmsService _smsService;
@@ -51,14 +52,20 @@ namespace API.Areas.MobilApi.Controllers
                     smsItem.fromPhone = "HEPIYI";
                     smsItem.fromPhone2 = "HEPIYI";
                 }
-                _smsService.SmsIcerikYaz(smsItem);
+                var (ok, msg) = _smsService.SmsIcerikYaz(smsItem);
+                if (!ok)
+                {
+                    Utils.WriteErrorLog("SmsReceiver başarısız: " + msg);
+                    return Json(new { Status = 500, Result = false, Message = msg });
+                }
+
+                return Json(new { Status = 200, Result = true });
             }
             catch (Exception ex)
             {
-                Utils.WriteErrorLog(ex.Message + Environment.NewLine + ex.StackTrace + Environment.NewLine);
+                Utils.WriteErrorLog("SmsReceiver exception: " + ex + Environment.NewLine);
+                return Json(new { Status = 500, Result = false, Message = ex.Message });
             }
-
-            return Json(new { Status = 200, Result = true });
         }
 
         [HttpPost]

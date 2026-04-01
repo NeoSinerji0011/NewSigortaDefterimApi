@@ -1,4 +1,4 @@
-﻿using API.Areas.MobilApi.Models.Database;
+using API.Areas.MobilApi.Models.Database;
 using API.Areas.MobilApi.Models.Input;
 using Newtonsoft.Json;
 using System;
@@ -130,9 +130,47 @@ namespace API.Areas.MobilApi.Helper
             var res = localTime.Date.ToString(dateFormatText).Replace("\\", "").Replace("/", "").Replace(".", "") + "" + localTime.DateTime.ToString("HH:mm:ss").Replace(":", "") + "" + (milisecond.Length == 1 ? "00" + milisecond : milisecond.Length == 2 ? "0" + milisecond : milisecond);
             return decimal.Parse(res).ToString();
         }
+        static string ErrorLogDirectory()
+        {
+            return Path.Combine(Directory.GetCurrentDirectory(), "areas", "mobilapi", "files", "errorlog");
+        }
+
         public static void WriteErrorLog(string val)
         {
-            File.AppendAllText(Directory.GetCurrentDirectory() + "/areas/mobilapi/files/errorlog/error_log.json", val + " " + DateTime.Now);
+            try
+            {
+                var dir = ErrorLogDirectory();
+                Directory.CreateDirectory(dir);
+                var path = Path.Combine(dir, "error_log.json");
+                File.AppendAllText(path, val + Environment.NewLine + "--- " + DateTime.Now + Environment.NewLine);
+            }
+            catch
+            {
+                try
+                {
+                    var fallback = Path.Combine(Directory.GetCurrentDirectory(), "sms_api_log.txt");
+                    File.AppendAllText(fallback, val + Environment.NewLine + DateTime.Now + Environment.NewLine);
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        /// <summary>Başarılı SMS DB kayıtları — hata ayıklama için.</summary>
+        public static void WriteSmsAuditLine(string line)
+        {
+            try
+            {
+                var dir = ErrorLogDirectory();
+                Directory.CreateDirectory(dir);
+                var path = Path.Combine(dir, "sms_audit.log");
+                File.AppendAllText(path, line + Environment.NewLine);
+            }
+            catch
+            {
+                WriteErrorLog("WriteSmsAuditLine failed: " + line);
+            }
         }
         public static void DeleteFile(string path)
         {
