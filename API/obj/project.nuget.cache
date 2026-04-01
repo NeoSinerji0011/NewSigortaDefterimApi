@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WCPHDUk2bd4=",
+  "dgSpecHash": "eYwZummzKmE=",
   "success": true,
-  "projectFilePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\itextsharp\\5.5.13.2\\itextsharp.5.5.13.2.nupkg.sha512",
@@ -213,8 +213,8 @@
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
   ],
@@ -222,10 +222,10 @@
     {
       "code": "NU1902",
       "level": "Warning",
-      "message": "'BouncyCastle' 1.8.9 paketinde önem derecesi orta olan bilinen bir https://github.com/advisories/GHSA-8xfc-gm6g-vgpv güvenlik açığı var",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8xfc-gm6g-vgpv",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -234,10 +234,10 @@
     {
       "code": "NU1902",
       "level": "Warning",
-      "message": "'BouncyCastle' 1.8.9 paketinde önem derecesi orta olan bilinen bir https://github.com/advisories/GHSA-m44j-cfrm-g8qc güvenlik açığı var",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m44j-cfrm-g8qc",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -246,10 +246,10 @@
     {
       "code": "NU1902",
       "level": "Warning",
-      "message": "'BouncyCastle' 1.8.9 paketinde önem derecesi orta olan bilinen bir https://github.com/advisories/GHSA-v435-xc8x-wvr9 güvenlik açığı var",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-v435-xc8x-wvr9",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -258,10 +258,10 @@
     {
       "code": "NU1902",
       "level": "Warning",
-      "message": "'Microsoft.AspNetCore.Authentication.JwtBearer' 3.0.0 paketinde önem derecesi orta olan bilinen bir https://github.com/advisories/GHSA-q7cg-43mg-qp69 güvenlik açığı var",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'Microsoft.AspNetCore.Authentication.JwtBearer' 3.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-q7cg-43mg-qp69",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -270,10 +270,10 @@
     {
       "code": "NU1902",
       "level": "Warning",
-      "message": "'Swashbuckle.AspNetCore.SwaggerUI' 5.0.0-rc4 paketinde önem derecesi orta olan bilinen bir https://github.com/advisories/GHSA-qrmm-w75w-3wpx güvenlik açığı var",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'Swashbuckle.AspNetCore.SwaggerUI' 5.0.0-rc4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-qrmm-w75w-3wpx",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "Swashbuckle.AspNetCore.SwaggerUI",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -282,10 +282,10 @@
     {
       "code": "NU1904",
       "level": "Warning",
-      "message": "'System.Drawing.Common' 5.0.2 paketinde önem derecesi kritik olan bilinen bir https://github.com/advisories/GHSA-rxg9-xrhp-64gj güvenlik açığı var",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'System.Drawing.Common' 5.0.2 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "System.Drawing.Common",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -294,10 +294,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "'BouncyCastle 1.8.9' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'BouncyCastle 1.8.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -306,10 +306,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "'iTextSharp 5.5.13.2' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'iTextSharp 5.5.13.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "iTextSharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -318,10 +318,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "'Microsoft.AspNet.WebApi.Client 4.0.20710' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'Microsoft.AspNet.WebApi.Client 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "Microsoft.AspNet.WebApi.Client",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -330,10 +330,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "'Microsoft.AspNet.WebApi.Core 4.0.20710' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -342,10 +342,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "'Microsoft.Net.Http 2.0.20710' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'Microsoft.Net.Http 2.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "Microsoft.Net.Http",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -354,10 +354,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "'Swashbuckle.Core 5.6.0' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
-      "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "message": "Package 'Swashbuckle.Core 5.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
       "libraryId": "Swashbuckle.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"

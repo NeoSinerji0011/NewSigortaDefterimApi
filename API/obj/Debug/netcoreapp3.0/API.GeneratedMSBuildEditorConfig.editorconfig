@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = API
-build_property.ProjectDir = c:\Users\user\Desktop\yedek\sigortadefterim\NewSigortaDefterimApi\API\
+build_property.ProjectDir = C:\Users\user\Desktop\yedek\sigortadefterim\NewSigortaDefterimApi\NewSigortaDefterimApi\API\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

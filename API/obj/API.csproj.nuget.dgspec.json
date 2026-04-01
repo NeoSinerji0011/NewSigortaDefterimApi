@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj": {}
+    "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj": {
+    "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\API.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

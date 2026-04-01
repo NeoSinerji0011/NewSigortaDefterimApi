@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "suYd9+yNLio=",
+  "dgSpecHash": "NQuYOnFS0no=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\coverlet.collector\\1.0.1\\coverlet.collector.1.0.1.nupkg.sha512",
@@ -254,9 +254,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'BouncyCastle 1.8.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -266,9 +266,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'iTextSharp 5.5.13.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "libraryId": "iTextSharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -278,9 +278,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.AspNet.WebApi.Client 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "libraryId": "Microsoft.AspNet.WebApi.Client",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -290,9 +290,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.AspNet.WebApi.Core 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -302,9 +302,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.Net.Http 2.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "libraryId": "Microsoft.Net.Http",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
@@ -314,9 +314,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Swashbuckle.Core 5.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
+      "filePath": "C:\\Users\\user\\Desktop\\yedek\\sigortadefterim\\NewSigortaDefterimApi\\NewSigortaDefterimApi\\API.IntegrationTests\\API.IntegrationTests.csproj",
       "libraryId": "Swashbuckle.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
