@@ -19,6 +19,7 @@ using System.Reflection;
 using System.IO;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.Extensions.FileProviders;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using SigortaDefterimV2API.Hosted;
 
@@ -44,6 +45,18 @@ namespace SigortaDefterimV2API
             {
                 x.UseSqlServer(Configuration.GetConnectionString("Connection"));
             });
+
+            var smsCs = Configuration.GetConnectionString("SmsConnection");
+            if (string.IsNullOrWhiteSpace(smsCs))
+            {
+                throw new InvalidOperationException(
+                    "ConnectionStrings:SmsConnection boş. appsettings.json veya ortam değişkeni ConnectionStrings__SmsConnection ile SMS veritabanını tanımlayın.");
+            }
+
+            services.AddDbContext<API.Areas.MobilApi.Models.MobileSmsMirrorDbContext>(x =>
+            {
+                x.UseSqlServer(smsCs);
+            });
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -52,7 +65,13 @@ namespace SigortaDefterimV2API
             //services.AddCors(options =>
             //     options.AddPolicy("myclients", builder =>
             //        builder.WithOrigins("https://localhost:44346/").AllowAnyMethod().AllowAnyHeader()));
-            services.AddMvc(option => option.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(option => option.EnableEndpointRouting = false)
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                    options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                });
 
             SetupDatabase(services);
 
@@ -144,7 +163,6 @@ namespace SigortaDefterimV2API
                 x.MultipartBodyLengthLimit = int.MaxValue;
                 x.MultipartHeadersLengthLimit = int.MaxValue;
             });
-            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
