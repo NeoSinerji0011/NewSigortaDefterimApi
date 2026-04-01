@@ -31,7 +31,7 @@ namespace SigortaDefterimV2API.Hosted
                 {
                     using (var scope = _scopeFactory.CreateScope())
                     {
-                        var db = scope.ServiceProvider.GetRequiredService<DataContext>();
+                        var db = scope.ServiceProvider.GetRequiredService<MobileSmsMirrorDbContext>();
                         var threshold = Utils.getTRDateTime().Subtract(Retention);
                         await db.Database.ExecuteSqlRawAsync(
                             "DELETE FROM MobileSms WHERE SmsTarihi < {0}",

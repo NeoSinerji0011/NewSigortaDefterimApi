@@ -20,13 +20,15 @@ namespace API.Areas.MobilApi.Services
     public class SmsService
     {
         private DataContext _context;
+        private readonly MobileSmsMirrorDbContext _smsDb;
         private readonly AppSettings _appSettings;
         JwtSecurityTokenHandler tokenHandler;
         byte[] key;
 
-        public SmsService(DataContext context, IOptions<AppSettings> appSettings)
+        public SmsService(DataContext context, MobileSmsMirrorDbContext smsDb, IOptions<AppSettings> appSettings)
         {
             _context = context;
+            _smsDb = smsDb;
             _appSettings = appSettings.Value;
             tokenHandler = new JwtSecurityTokenHandler();
             key = Encoding.ASCII.GetBytes(_appSettings.Secret);
@@ -59,8 +61,8 @@ namespace API.Areas.MobilApi.Services
             if (smsItem == null)
                 return;
 
-            _context.MobileSms.Add(CreateMobileSmsEntity(smsItem));
-            _context.SaveChanges();
+            _smsDb.MobileSms.Add(CreateMobileSmsEntity(smsItem));
+            _smsDb.SaveChanges();
         }
 
         private static MobileSms CreateMobileSmsEntity(SmsItem smsItem)
