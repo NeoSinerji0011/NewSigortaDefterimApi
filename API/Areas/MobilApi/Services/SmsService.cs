@@ -20,19 +20,22 @@ namespace API.Areas.MobilApi.Services
     public class SmsService
     {
         private DataContext _context;
+        private readonly MobileSmsMirrorDbContext _smsDb;
         private readonly AppSettings _appSettings;
         JwtSecurityTokenHandler tokenHandler;
         byte[] key;
 
-        public SmsService(DataContext context, IOptions<AppSettings> appSettings)
+        public SmsService(DataContext context, MobileSmsMirrorDbContext smsDb, IOptions<AppSettings> appSettings)
         {
             _context = context;
+            _smsDb = smsDb;
             _appSettings = appSettings.Value;
             tokenHandler = new JwtSecurityTokenHandler();
             key = Encoding.ASCII.GetBytes(_appSettings.Secret);
         }
 
-        public void SmsIcerikYaz(SmsItem smsItem)
+        /// <summary>Dosya + SMS veritabanı. Ok=false ise Message dolu; API gerçek hata döndürebilir.</summary>
+        public (bool Ok, string Message) SmsIcerikYaz(SmsItem smsItem)
         {
             try
             {
@@ -40,27 +43,32 @@ namespace API.Areas.MobilApi.Services
             }
             catch (Exception ex)
             {
-                Utils.WriteErrorLog(ex.Message);
-                return;
+                Utils.WriteErrorLog("SmsIcerikYaz WriteFile2: " + ex);
+                return (false, "Dosya yazılamadı: " + ex.Message);
             }
 
             try
             {
-                MobileSmsKaydet(smsItem);
+                var id = MobileSmsKaydet(smsItem);
+                Utils.WriteSmsAuditLine($"{DateTime.Now:O} OK MobileSms Id={id} To={smsItem.toPhone}");
+                return (true, null);
             }
             catch (Exception ex)
             {
-                Utils.WriteErrorLog(ex.ToString());
+                Utils.WriteErrorLog("SmsIcerikYaz veritabanı: " + ex);
+                return (false, "Veritabanı: " + ex.Message);
             }
         }
 
-        public void MobileSmsKaydet(SmsItem smsItem)
+        public int MobileSmsKaydet(SmsItem smsItem)
         {
             if (smsItem == null)
-                return;
+                throw new ArgumentNullException(nameof(smsItem));
 
-            _context.MobileSms.Add(CreateMobileSmsEntity(smsItem));
-            _context.SaveChanges();
+            var row = CreateMobileSmsEntity(smsItem);
+            _smsDb.MobileSms.Add(row);
+            _smsDb.SaveChanges();
+            return row.Id;
         }
 
         private static MobileSms CreateMobileSmsEntity(SmsItem smsItem)
