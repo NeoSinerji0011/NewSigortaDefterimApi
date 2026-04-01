@@ -33,14 +33,6 @@ namespace SigortaDefterimV2API
             {
                 options.UseInMemoryDatabase("TestDb");
             });
-            services.AddDbContext<API.Areas.MobilApi.Models.DataContext>(options =>
-            {
-                options.UseInMemoryDatabase("TestMobilApiDb");
-            });
-            services.AddDbContext<API.Areas.MobilApi.Models.MobileSmsMirrorDbContext>(options =>
-            {
-                options.UseInMemoryDatabase("TestMobileSmsDb");
-            });
         }
     }
 }
