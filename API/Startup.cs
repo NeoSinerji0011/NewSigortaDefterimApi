@@ -49,8 +49,18 @@ namespace SigortaDefterimV2API
             var smsCs = Configuration.GetConnectionString("SmsConnection");
             if (string.IsNullOrWhiteSpace(smsCs))
             {
+                smsCs = Configuration.GetConnectionString("ConnectionMobileSms");
+            }
+
+            if (string.IsNullOrWhiteSpace(smsCs))
+            {
+                smsCs = Configuration.GetConnectionString("Connection");
+            }
+
+            if (string.IsNullOrWhiteSpace(smsCs))
+            {
                 throw new InvalidOperationException(
-                    "ConnectionStrings:SmsConnection boş. appsettings.json veya ortam değişkeni ConnectionStrings__SmsConnection ile SMS veritabanını tanımlayın.");
+                    "SMS veya ana veritabanı bağlantısı tanımlı değil. ConnectionStrings:SmsConnection, ConnectionMobileSms veya Connection ekleyin (veya ConnectionStrings__SmsConnection ortam değişkeni).");
             }
 
             services.AddDbContext<API.Areas.MobilApi.Models.MobileSmsMirrorDbContext>(x =>
