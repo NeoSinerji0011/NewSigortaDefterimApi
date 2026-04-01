@@ -44,6 +44,18 @@ namespace SigortaDefterimV2API
             {
                 x.UseSqlServer(Configuration.GetConnectionString("Connection"));
             });
+
+            var smsConnection = Configuration.GetConnectionString("SmsConnection");
+            if (string.IsNullOrWhiteSpace(smsConnection))
+            {
+                throw new InvalidOperationException(
+                    "ConnectionStrings:SmsConnection tanımlı değil. API klasöründe appsettings.sms.json dosyasına ekleyin veya ortam değişkeni ConnectionStrings__SmsConnection kullanın.");
+            }
+
+            services.AddDbContext<API.Areas.MobilApi.Models.MobileSmsMirrorDbContext>(x =>
+            {
+                x.UseSqlServer(smsConnection);
+            });
         }
 
         public void ConfigureServices(IServiceCollection services)

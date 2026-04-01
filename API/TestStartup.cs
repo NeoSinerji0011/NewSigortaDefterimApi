@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +32,14 @@ namespace SigortaDefterimV2API
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseInMemoryDatabase("TestDb");
+            });
+            services.AddDbContext<API.Areas.MobilApi.Models.DataContext>(options =>
+            {
+                options.UseInMemoryDatabase("TestMobilApiDb");
+            });
+            services.AddDbContext<API.Areas.MobilApi.Models.MobileSmsMirrorDbContext>(options =>
+            {
+                options.UseInMemoryDatabase("TestMobileSmsDb");
             });
         }
     }
